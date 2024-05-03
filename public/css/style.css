@@ -280,6 +280,12 @@ form .btn {
     pointer-events: none;
 }
 
+@media (pointer: coarse) {
+    .cursor {
+        display: none;
+    }
+}
+
 /* Animations */
 @keyframes bump {
     to {
