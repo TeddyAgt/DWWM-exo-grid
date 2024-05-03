@@ -16,16 +16,23 @@
 </head>
 
 <body>
+    <!-- Curseur personnalisé -->
     <div class="cursor" aria-hidden="true"></div>
+
     <main class="grid-container">
         <!-- Header -->
-        <header class="box box--6-1 box--center bg-black" id="box-header">
-            <h1 class="w900 white t-center" aria-hidden="true" aria-label="How about some tetris fun ?"><span
-                    class="w200">How about some <span class="striked">css
+        <header class="box box--6-1 box--center bg-black" id="box-header" aria-labelledby="sr-title">
+
+            <!-- Je cache le vrai titre aux lecteurs d'écran parce que je sais pas trop comment ils vont gérer tous les morceaux isolés dans des spans -->
+            <h1 class="w900 white t-center" aria-hidden="true">
+                <span class="w200">How about some <span class="striked">css
                         grid</span></span>
                 <span class="t-red">t</span><span class="t-orange">e</span><span class="t-yellow">t</span><span
                     class="t-green">r</span><span class="t-blue">i</span><span class="t-purple">s</span> fun ?
             </h1>
+
+            <!-- Ca c'est le titre pour les lecteurs d'écrans -->
+            <p id="sr-title" class="sr-only">How about some tetris fun ?</p>
         </header>
 
         <!-- Navigation -->
@@ -70,7 +77,7 @@
         <div class="box box--2-1 bg-t-red" id="box-19"></div>
         <div class="box box--2-1 bg-t-yellow" id="box-21"></div>
 
-        <!-- Box photo -->
+        <!-- Box photo 🐈-->
         <div class="box box--2-1" id="box-22"></div>
 
         <div class="box box--2-1 bg-t-blue" id="box-23"></div>
@@ -83,7 +90,7 @@
         <div class="box box--2-2 bg-t-orange" id="box-32"></div>
         <div class="box box--4-1 bg-t-red" id="box-37"></div>
 
-        <!-- Il faut ajouter deux blocs en dessous 820px -->
+        <!-- Il faut ajouter deux blocs en dessous 820px sinon il y a un trou 😡 -->
         <div class="box box--2-1 bg-t-green box-hidden box-hidden--820" id="box-34"></div>
         <div class="box box--2-1 bg-t-blue box-hidden box-hidden--820" id="box-35"></div>
 
@@ -133,3 +140,11 @@
 
     <script src="./public/js/script.js"></script>
 </body>
+
+<!-- 
+   Made with
+    /\_/\
+   ( o.o )
+   =  ^ =
+Cosmo the cat
+ -->

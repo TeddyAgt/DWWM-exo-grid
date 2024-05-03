@@ -5,6 +5,7 @@ window.addEventListener("mousemove", moveCursor);
 
 function moveCursor(e) {
     cursor.style.transform = `translate(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%))`;
+    // obligé de tirer de -50% sinon le bout du curseur est sur le coin de l'icône au lieu d'être au milieu
 }
 
 // Gestion de la musique
