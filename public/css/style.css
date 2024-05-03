@@ -104,6 +104,7 @@ label {
     font-size: 64px;
     animation: bump 0.9s infinite ease-in-out reverse;
     padding: 32px;
+    cursor: none;
 }
 
 .audio-toggler i {
@@ -239,7 +240,7 @@ img {
 .input-group {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     margin-bottom: 16px;
 }
 
