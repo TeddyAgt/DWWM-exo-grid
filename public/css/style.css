@@ -113,6 +113,8 @@ label {
 
 /* utils */
 .sr-only {
+    /* Ca c'est pas mon code c'est un truc que je garde toujours de côté au cas où
+    j'ai besoin d'inclure un truc seulement pour les SR */
     position: absolute !important;
     width: 1px !important;
     height: 1px !important;
@@ -157,6 +159,12 @@ label {
 
 .t-center {
     text-align: center;
+}
+
+.box--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bg-transparent {
@@ -228,15 +236,6 @@ label {
     transition: background-color 0.2s;
 }
 
-.picture-container {
-    max-width: 100%;
-}
-
-img {
-    width: 100%;
-    border-radius: 4px;
-}
-
 .input-group {
     display: flex;
     flex-direction: column;
@@ -276,12 +275,13 @@ form .btn {
     width: 24px;
     height: 24px;
     background: url(../../assets/icons/tetris.png);
-    z-index: 10;
+    /* Faut être sûr qu'il sera toujours au dessus de tout */
     z-index: 100;
     pointer-events: none;
     display: none;
 }
 
+/* Je l'affiche uniquement sur les desktop */
 @media (pointer: fine) {
     .cursor {
         display: block;
@@ -382,15 +382,6 @@ form .btn {
 
 .box--12-1 {
     grid-column: span 12;
-}
-
-/* ********************************************************************************** */
-
-/* bloc utils */
-.box--center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* ********************************************************************************** */
