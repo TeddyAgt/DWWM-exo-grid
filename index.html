@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page d'exercice">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c685d2b770.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="icon" href="./assets/icons/tetris-2.png">
+    <title>Gridfun</title>
+</head>
+
+<body>
+    <div class="cursor" aria-hidden="true"></div>
+    <main class="grid-container">
+        <header class="box box--6-1 box--center bg-black" id="box-header">
+            <h1 class="ultra white t-center"><span class="w200">How about some <span class="striked">css
+                        grid</span></span>
+                <span class="t-red">t</span><span class="t-orange">e</span><span class="t-yellow">t</span><span
+                    class="t-green">r</span><span class="t-blue">i</span><span class="t-purple">s</span> fun ?
+            </h1>
+        </header>
+
+        <nav class="box box--2-2 bg-t-red box--center" id="box-1">
+            <a class="navigation-link t-center" href="#box-25">Aller au milieu</a>
+            <a class="navigation-link t-center" href="#box-footer">Aller en bas</a>
+        </nav>
+
+        <article class="box box--4-2 bg-transparent box--center" id="box-article">
+            <h2 class="bold t-center">Mmmmh okay 🤔... but is it <span class="ultra underline">responsive</span> ?</h2>
+            <p class="t-center">🤷🏻‍♂️ Well, go and <span class="w700">give it a try</span> !</p>
+        </article>
+
+        <!-- <div class="box box--2-1 bg-t-orange" id="box-2"></div> -->
+        <div class="box box--2-1 bg-t-yellow box--center" id="box-3">
+            <audio src="./assets/sounds/Tetris.mp3" loop>
+            </audio>
+            <button class="audio-toggler" aria-label="Stopper la musique" title="Stopper la musique">
+                <i class="fa-solid fa-volume-xmark c222" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <div class="box box--4-1 bg-t-green" id="box-4"></div>
+        <div class="box box--2-1 bg-t-blue" id="box-5"></div>
+
+        <article class="box box--6-1 bg-transparent box--center" id="box-6">
+            <h2 class="t-center">Je cherche un stage de dev web</h2>
+            <p class="t-center">Du 02/09 au 08/11</p>
+            <p class="t-center">👉 <a class="underline" href="https://teddyagt.github.io/" target="_blank"
+                    title="Mon cv">mon CV</a>.</p>
+        </article>
+
+        <div class="box box--2-1 bg-t-red" id="box-7"></div>
+        <div class="box box--2-1 bg-t-orange" id="box-8"></div>
+        <div class="box box--2-2 bg-t-yellow" id="box-9"></div>
+        <!-- <div class="box box--2-1 bg-t-green" id="box-10"></div> -->
+        <div class="box box--2-3 bg-t-blue" id="box-11"></div>
+        <!-- <div class="box box--2-1 bg-t-purple" id="box-12"></div> -->
+        <div class="box box--2-2 bg-t-red" id="box-13"></div>
+        <div class="box box--4-1 bg-t-orange" id="box-14"></div>
+        <!-- <div class="box box--2-1 bg-t-yellow" id="box-15"></div> -->
+        <!-- <div class="box box--2-1 bg-t-green" id="box-16"></div> -->
+        <!-- <div class="box box--2-1 bg-t-blue" id="box-17"></div> -->
+        <!-- <div class="box box--2-1 bg-t-purple" id="box-18"></div> -->
+        <div class="box box--2-1 bg-t-red" id="box-19"></div>
+        <!-- <div class="box box--2-1 bg-t-orange" id="box-20"></div> -->
+        <div class="box box--2-1 bg-t-yellow" id="box-21"></div>
+
+        <div class="box box--2-1" id="box-22">
+
+        </div>
+
+        <div class="box box--2-1 bg-t-blue" id="box-23"></div>
+        <div class="box box--8-1 bg-t-purple" id="box-24"></div>
+        <div class="box box--2-1 bg-t-red" id="box-25"></div>
+        <div class="box box--2-1 bg-t-orange" id="box-26"></div>
+        <div class="box box--4-1 bg-t-yellow" id="box-27"></div>
+        <!-- <div class="box box--2-1 bg-t-green" id="box-28"></div> -->
+        <div class="box box--2-1 bg-t-blue" id="box-29"></div>
+        <!-- <div class="box box--2-1 bg-t-purple" id="box-30"></div> -->
+        <div class="box box--2-1 bg-t-red" id="box-31"></div>
+        <div class="box box--2-2 bg-t-orange" id="box-32"></div>
+        <div class="box box--4-1 bg-t-red" id="box-37"></div>
+
+        <!-- Il faut ajouter deux blocs à partir de 820px -->
+        <div class="box box--2-1 bg-t-green box-hidden box-hidden--820" id="box-34"></div>
+        <div class="box box--2-1 bg-t-blue box-hidden box-hidden--820" id="box-35"></div>
+
+
+        <div class="box box--2-1 bg-t-purple" id="box-36"></div>
+        <!-- <div class="box box--2-1 bg-t-yellow" id="box-33"></div> -->
+
+        <div class="box box--2-2 bg-t-green" id="box-46"></div>
+
+        <div class="box box--2-1 bg-t-yellow" id="box-39"></div>
+        <div class="box box--2-1 bg-t-green" id="box-40"></div>
+        <div class="box box--4-1 bg-t-blue" id="box-41"></div>
+        <!-- <div class="box box--2-1 bg-t-purple" id="box-42"></div> -->
+        <!-- <div class="box box--2-1 bg-t-red" id="box-43"></div> -->
+        <!-- <div class="box box--2-1 bg-t-orange" id="box-44"></div> -->
+        <!-- <div class="box box--2-1 bg-t-yellow" id="box-45"></div> -->
+        <!-- <div class="box box--2-1 bg-t-orange" id="box-38"></div> -->
+        <!-- <div class="box box--2-1 bg-t-blue" id="box-47"></div> -->
+        <div class="box box--2-1 bg-t-purple" id="box-48"></div>
+        <div class="box box--2-1 bg-t-red" id="box-49"></div>
+        <!-- <div class="box box--2-1 bg-t-orange" id="box-50"></div> -->
+        <div class="box box--8-1 bg-t-yellow" id="box-51"></div>
+        <!-- <div class="box box--2-1 bg-t-green" id="box-52"></div> -->
+        <div class="box box--4-1 bg-t-blue" id="box-53"></div>
+
+        <footer class="box box--12-1 box--center bg-black box--center t-center" id="box-footer">
+            <p class="white">&copy; Teddy Aboim - 2024</p>
+            <p class="white">Merci <a class="underline" href="https://www.dariusdan.com/" target="_blank">Darius Dan</a>
+                pour le curseur.
+            </p>
+        </footer>
+    </main>
+
+
+
+    <script src="./public/js/script.js"></script>
+</body>

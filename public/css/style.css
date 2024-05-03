@@ -1,0 +1,381 @@
+/* reset */
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variables */
+:root {
+    /* fonts */
+    --ff-main: "Open Sans", sans-serif;
+
+    /* colors */
+    --white: #ecf0f1;
+    --white-transparent: #ecf0f1c9;
+    --black: #1f1e25;
+    --black--lighter: #222;
+    --blue-primary: #0ea5e9;
+    --purple-primary: #a855f7;
+    --t-red: #ff4968;
+    --t-orange: #feac18;
+    --t-yellow: #ffeb2e;
+    --t-green: #65ea49;
+    --t-blue: #00d6f1;
+    --t-purple: #d92ad7;
+}
+
+/* generals */
+
+html {
+    cursor: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(
+        to right,
+        var(--blue-primary),
+        var(--purple-primary)
+    );
+    color: var(--black);
+    font-family: var(--ff-main);
+    min-height: 100vh;
+}
+
+article,
+footer,
+nav {
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 44px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 24px;
+}
+
+a {
+    color: inherit;
+    cursor: none;
+}
+
+nav {
+    gap: 16px;
+}
+
+.audio-toggler {
+    background: none;
+    border: none;
+    font-size: 64px;
+    animation: bump 0.9s infinite ease-in-out reverse;
+    padding: 32px;
+}
+
+.audio-toggler i {
+    pointer-events: none;
+}
+
+@keyframes bump {
+    to {
+        scale: 1.2;
+    }
+}
+
+/* utils */
+
+.w200 {
+    font-weight: 200;
+}
+
+.w700 {
+    font-weight: 700;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.ultra {
+    font-weight: 900;
+}
+
+.white {
+    color: var(--white);
+}
+
+.c222 {
+    color: var(--black);
+}
+
+.underline {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 1px;
+}
+
+.striked {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.bg-transparent {
+    background: var(--white-transparent);
+}
+
+.t-red {
+    color: #ff4968;
+}
+
+.bg-t-red {
+    background: var(--t-red);
+}
+
+.t-orange {
+    color: #feac18;
+}
+
+.bg-black {
+    background: var(--black--lighter);
+}
+
+.bg-t-orange {
+    background: #feac18;
+}
+
+.t-yellow {
+    color: #ffeb2e;
+}
+
+.bg-t-yellow {
+    background: #ffeb2e;
+}
+
+.t-green {
+    color: #65ea49;
+}
+
+.bg-t-green {
+    background: #65ea49;
+}
+
+.t-blue {
+    color: #00d6f1;
+}
+
+.bg-t-blue {
+    background: #00d6f1;
+}
+
+.t-purple {
+    color: #d92ad7;
+}
+
+.bg-t-purple {
+    background: #d92ad7;
+}
+
+.navigation-link {
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.navigation-link:hover {
+    background-color: #fd3a5b;
+    transition: background-color 0.2s;
+}
+
+.picture-container {
+    max-width: 100%;
+}
+
+img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Cursor */
+.cursor {
+    position: fixed;
+    width: 24px;
+    height: 24px;
+    background: url(../../assets/icons/tetris.png);
+    z-index: 10;
+    z-index: 100;
+    pointer-events: none;
+}
+
+/* ********************************************************************************** */
+
+/* basic bloc layouts */
+
+.grid-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(200px, 1fr);
+    padding: 16px;
+    gap: 16px;
+    grid-auto-flow: row dense;
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.3);
+    transition: scale 0.2s ease-out;
+}
+
+.box:hover {
+    scale: 1.00875;
+    transition: scale 0.2s ease-out;
+}
+
+.box-hidden {
+    display: none;
+}
+
+.box--2-1 {
+    grid-column: span 2;
+}
+
+.box--2-2 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.box--2-3 {
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.box--2-4 {
+    grid-column: span 2;
+    grid-row: span 4;
+}
+
+.box--4-1 {
+    grid-column: span 4;
+}
+
+.box--4-2 {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+.box--6-1 {
+    grid-column: span 6;
+}
+
+.box--8-1 {
+    grid-column: span 8;
+}
+
+.box--12-1 {
+    grid-column: span 12;
+}
+
+/* ********************************************************************************** */
+
+/* bloc utils */
+.box--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ********************************************************************************** */
+
+/* bloc  specifics */
+
+#box-1 {
+    font-weight: 900;
+}
+
+#box-article h2 {
+    margin-bottom: 64px;
+}
+
+#box-6 h2 {
+    margin-bottom: 16px;
+}
+
+#box-22 {
+    background: url(../../assets/images/cosmo-square-640.jpg) center / cover;
+}
+
+/* ********************************************************************************** */
+
+/* @media */
+
+@media screen and (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .box--12-1 {
+        grid-column: span 8;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .grid-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .box--8-1 {
+        grid-column: span 6;
+    }
+
+    .box--12-1 {
+        grid-column: span 6;
+    }
+
+    .box-hidden--820 {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .box--6-1 {
+        grid-column: span 4;
+    }
+
+    .box--8-1 {
+        grid-column: span 4;
+    }
+
+    .box--12-1 {
+        grid-column: span 4;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
