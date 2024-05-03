@@ -21,11 +21,13 @@ function toggleMusic(e) {
     if (isMusicPlaying) {
         audio.play();
         e.target.ariaLabel = "Stopper la musique";
+        e.target.title = "Stopper la musique";
         e.target.innerHTML =
             '<i class="fa-solid fa-volume-xmark c222" aria-hidden="true"></i>';
     } else {
         audio.pause();
         e.target.ariaLabel = "Jouer la musique";
+        e.target.title = "Jouer la musique";
         e.target.innerHTML =
             '<i class="fa-solid fa-volume-low c222" aria-hidden="true"></i>';
     }

@@ -18,8 +18,10 @@
 <body>
     <div class="cursor" aria-hidden="true"></div>
     <main class="grid-container">
+        <!-- Header -->
         <header class="box box--6-1 box--center bg-black" id="box-header">
-            <h1 class="ultra white t-center"><span class="w200">How about some <span class="striked">css
+            <h1 class="w900 white t-center" aria-hidden="true" aria-label="How about some tetris fun ?"><span
+                    class="w200">How about some <span class="striked">css
                         grid</span></span>
                 <span class="t-red">t</span><span class="t-orange">e</span><span class="t-yellow">t</span><span
                     class="t-green">r</span><span class="t-blue">i</span><span class="t-purple">s</span> fun ?
@@ -27,20 +29,22 @@
         </header>
 
         <nav class="box box--2-2 bg-t-red box--center" id="box-1">
-            <a class="navigation-link t-center" href="#box-25">Aller au milieu</a>
-            <a class="navigation-link t-center" href="#box-footer">Aller en bas</a>
+            <a class="navigation-link t-center" href="#box-25" title="Aller au milieu de la page">Aller au milieu</a>
+            <a class="navigation-link t-center" href="#contact" title="Aller à contact">Contact</a>
+            <a class="navigation-link t-center" href="#box-footer" title="Aller en bas de la page">Aller en bas</a>
         </nav>
 
+        <!-- Article 1 -->
         <article class="box box--4-2 bg-transparent box--center" id="box-article">
-            <h2 class="bold t-center">Mmmmh okay 🤔... but is it <span class="ultra underline">responsive</span> ?</h2>
+            <h2 class="w700 t-center">Mmmmh okay 🤔... but is it <span class="w900 underline">responsive</span> ?</h2>
             <p class="t-center">🤷🏻‍♂️ Well, go and <span class="w700">give it a try</span> !</p>
         </article>
 
-        <!-- <div class="box box--2-1 bg-t-orange" id="box-2"></div> -->
+        <!-- Audio -->
         <div class="box box--2-1 bg-t-yellow box--center" id="box-3">
             <audio src="./assets/sounds/Tetris.mp3" loop>
             </audio>
-            <button class="audio-toggler" aria-label="Jouer la musique" title="Stopper la musique">
+            <button class="audio-toggler" aria-label="Jouer la musique" title="Jouer la musique">
                 <i class="fa-solid fa-volume-low c222" aria-hidden="true"></i>
             </button>
         </div>
@@ -48,6 +52,7 @@
         <div class="box box--4-1 bg-t-green" id="box-4"></div>
         <div class="box box--2-1 bg-t-blue" id="box-5"></div>
 
+        <!-- Article 2 -->
         <article class="box box--6-1 bg-transparent box--center" id="box-6">
             <h2 class="t-center">Je cherche un stage de dev web</h2>
             <p class="t-center">Du 02/09 au 08/11</p>
@@ -58,70 +63,72 @@
         <div class="box box--2-1 bg-t-red" id="box-7"></div>
         <div class="box box--2-1 bg-t-orange" id="box-8"></div>
         <div class="box box--2-2 bg-t-yellow" id="box-9"></div>
-        <!-- <div class="box box--2-1 bg-t-green" id="box-10"></div> -->
         <div class="box box--2-3 bg-t-blue" id="box-11"></div>
-        <!-- <div class="box box--2-1 bg-t-purple" id="box-12"></div> -->
         <div class="box box--2-2 bg-t-red" id="box-13"></div>
         <div class="box box--4-1 bg-t-orange" id="box-14"></div>
-        <!-- <div class="box box--2-1 bg-t-yellow" id="box-15"></div> -->
-        <!-- <div class="box box--2-1 bg-t-green" id="box-16"></div> -->
-        <!-- <div class="box box--2-1 bg-t-blue" id="box-17"></div> -->
-        <!-- <div class="box box--2-1 bg-t-purple" id="box-18"></div> -->
         <div class="box box--2-1 bg-t-red" id="box-19"></div>
-        <!-- <div class="box box--2-1 bg-t-orange" id="box-20"></div> -->
         <div class="box box--2-1 bg-t-yellow" id="box-21"></div>
 
-        <div class="box box--2-1" id="box-22">
-
-        </div>
+        <!-- Box photo -->
+        <div class="box box--2-1" id="box-22"></div>
 
         <div class="box box--2-1 bg-t-blue" id="box-23"></div>
         <div class="box box--8-1 bg-t-purple" id="box-24"></div>
         <div class="box box--2-1 bg-t-red" id="box-25"></div>
         <div class="box box--2-1 bg-t-orange" id="box-26"></div>
         <div class="box box--4-1 bg-t-yellow" id="box-27"></div>
-        <!-- <div class="box box--2-1 bg-t-green" id="box-28"></div> -->
         <div class="box box--2-1 bg-t-blue" id="box-29"></div>
-        <!-- <div class="box box--2-1 bg-t-purple" id="box-30"></div> -->
         <div class="box box--2-1 bg-t-red" id="box-31"></div>
         <div class="box box--2-2 bg-t-orange" id="box-32"></div>
         <div class="box box--4-1 bg-t-red" id="box-37"></div>
 
-        <!-- Il faut ajouter deux blocs à partir de 820px -->
+        <!-- Il faut ajouter deux blocs en dessous 820px -->
         <div class="box box--2-1 bg-t-green box-hidden box-hidden--820" id="box-34"></div>
         <div class="box box--2-1 bg-t-blue box-hidden box-hidden--820" id="box-35"></div>
 
-
         <div class="box box--2-1 bg-t-purple" id="box-36"></div>
-        <!-- <div class="box box--2-1 bg-t-yellow" id="box-33"></div> -->
-
         <div class="box box--2-2 bg-t-green" id="box-46"></div>
-
         <div class="box box--2-1 bg-t-yellow" id="box-39"></div>
         <div class="box box--2-1 bg-t-green" id="box-40"></div>
         <div class="box box--4-1 bg-t-blue" id="box-41"></div>
-        <!-- <div class="box box--2-1 bg-t-purple" id="box-42"></div> -->
-        <!-- <div class="box box--2-1 bg-t-red" id="box-43"></div> -->
-        <!-- <div class="box box--2-1 bg-t-orange" id="box-44"></div> -->
-        <!-- <div class="box box--2-1 bg-t-yellow" id="box-45"></div> -->
-        <!-- <div class="box box--2-1 bg-t-orange" id="box-38"></div> -->
-        <!-- <div class="box box--2-1 bg-t-blue" id="box-47"></div> -->
         <div class="box box--2-1 bg-t-purple" id="box-48"></div>
         <div class="box box--2-1 bg-t-red" id="box-49"></div>
-        <!-- <div class="box box--2-1 bg-t-orange" id="box-50"></div> -->
+        <div class="box box--2-1 bg-t-green" id="box-16"></div>
+
+        <!-- Contact -->
+        <form class="box box--4-2 bg-transparent box--center" id="contact" action="#" method="POST">
+            <h2 class="t-center">Faire coucou !</h2>
+            <div class="input-group">
+                <label for="email">Votre <span class="w700">email</span></label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="input-group">
+                <label for="message">Votre <span class="w700">message</span></label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+            <button class="btn" type="submit">Envoyer <span aria-hidden="true">🛩️</span></button>
+        </form>
+
+        <div class="box box--2-1 bg-t-purple" id="box-42"></div>
+        <div class="box box--2-1 bg-t-red" id="box-43"></div>
+        <div class="box box--2-1 bg-t-yellow" id="box-33"></div>
+        <div class="box box--2-1 bg-t-orange" id="box-44"></div>
+        <div class="box box--2-1 bg-t-yellow" id="box-45"></div>
+        <div class="box box--2-1 bg-t-orange" id="box-50"></div>
+        <div class="box box--2-1 bg-t-green" id="box-52"></div>
         <div class="box box--8-1 bg-t-yellow" id="box-51"></div>
-        <!-- <div class="box box--2-1 bg-t-green" id="box-52"></div> -->
         <div class="box box--4-1 bg-t-blue" id="box-53"></div>
 
+        <!-- Footer -->
         <footer class="box box--12-1 box--center bg-black box--center t-center" id="box-footer">
             <p class="white">&copy; Teddy Aboim - 2024</p>
-            <p class="white">Merci <a class="underline" href="https://www.dariusdan.com/" target="_blank">Darius Dan</a>
+            <p class="white">Merci <a class="underline" href="https://www.dariusdan.com/" target="_blank"
+                    title="Visiter le site de Darius Dan">Darius Dan</a>
                 pour le curseur.
             </p>
         </footer>
+
     </main>
-
-
 
     <script src="./public/js/script.js"></script>
 </body>
