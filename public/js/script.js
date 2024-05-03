@@ -7,14 +7,10 @@ function moveCursor(e) {
     cursor.style.transform = `translate(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%))`;
 }
 
-// Lancement du son
+// Gestion de la musique
 const audio = document.querySelector("audio");
-
-audio.play();
-let isMusicPlaying = true;
-
-// Gestion de l'arrêt du son
 const audioToggler = document.querySelector(".audio-toggler");
+let isMusicPlaying = false;
 
 audioToggler.addEventListener("click", (e) => {
     isMusicPlaying = !isMusicPlaying;
