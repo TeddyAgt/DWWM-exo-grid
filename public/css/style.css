@@ -278,11 +278,12 @@ form .btn {
     z-index: 10;
     z-index: 100;
     pointer-events: none;
+    display: none;
 }
 
-@media (pointer: coarse) {
+@media (pointer: fine) {
     .cursor {
-        display: none;
+        display: block;
     }
 }
 
